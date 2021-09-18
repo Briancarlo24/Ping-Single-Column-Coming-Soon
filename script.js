@@ -10,7 +10,7 @@ notifyButton.addEventListener("click", () => {
 
 function init() {
   inputField.classList.remove("borderChange");
-  errorMessage.classList.add("hidden");
+  // errorMessage.classList.add("hidden");
 }
 
 function validate() {

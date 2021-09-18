@@ -82,6 +82,13 @@ button {
   color: #c2d3ff;
 }
 
+.popup-error {
+  color: #ff5263;
+  font-size: 0.6em;
+  font-style: italic;
+  margin-bottom: 2.5em;
+}
+
 button {
   border: 1px solid #4f7df3;
   background-color: #4f7df3;
@@ -178,6 +185,7 @@ button:active {
   #main {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
   }
   .logo {
     margin-bottom: 1.75em;
@@ -213,6 +221,18 @@ button:active {
     margin-right: 10px;
     width: calc(100% - 215px);
   }
+  .popup-error {
+    font-size: 0.6em;
+    text-align: left;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 2rem;
+    margin-bottom: 2.5em;
+    width: 100%;
+    top: 295px;
+  }
   button {
     border: 1px solid #4f7df3;
     background-color: #4f7df3;
@@ -231,13 +251,6 @@ button:active {
     margin-top: 1em;
     margin-bottom: 3em;
   }
-}
-
-.popup-error {
-  color: #ff5263;
-  font-size: 0.6em;
-  font-style: italic;
-  margin-bottom: 2.5em;
 }
 
 .borderChange {
