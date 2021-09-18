@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/***************SCREEN SIZES***************/
+/***************COLORS***************/
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  padding: 1em;
+  text-align: center;
+}
+
+#main {
+  padding: 2em 0;
+}
+
+.logo {
+  margin-bottom: 1.75em;
+  width: 3.5em;
+}
+
+.main-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #969696;
+  margin-bottom: 1rem;
+}
+
+.main-title span {
+  font-weight: 700;
+  color: #151f29;
+}
+
+.main-desc {
+  color: #151f29;
+  font-size: 0.83rem;
+  margin-bottom: 3em;
+}
+
+.email,
+button {
+  border-radius: 2rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 0.7em;
+  font-weight: 300;
+  padding: 0.9rem 2rem;
+}
+
+.email {
+  border: 1px solid #c2d3ff;
+  color: #151f29;
+  margin-bottom: 0.8em;
+  width: 90%;
+  outline: none;
+}
+
+.email::-webkit-input-placeholder {
+  color: #c2d3ff;
+}
+
+.email:-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.email::-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.email::placeholder {
+  color: #c2d3ff;
+}
+
+button {
+  border: 1px solid #4f7df3;
+  background-color: #4f7df3;
+  -webkit-box-shadow: 0 10px 15px 5px rgba(194, 211, 255, 0.6);
+          box-shadow: 0 10px 15px 5px rgba(194, 211, 255, 0.6);
+  color: white;
+  cursor: pointer;
+  margin-bottom: 4em;
+  width: 90%;
+}
+
+button:active {
+  background-color: #698eec;
+  border: 1px solid #698eec;
+}
+
+.hero {
+  width: 100%;
+  margin-bottom: 5em;
+}
+
+.social-medias {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.fab {
+  color: #4f7df3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 2em;
+  border: 1px solid #e4e4e4;
+  background-color: white;
+  margin: 0 0.4rem;
+  font-size: 14px;
+}
+
+.fab:hover {
+  background-color: #4f7df3;
+  border: 1px solid #4f7df3;
+  color: white;
+  cursor: pointer;
+}
+
+.fab:active {
+  background-color: #698eec;
+  border: 1px solid #698eec;
+}
+
+.fa-facebook-f {
+  padding: 9px 11.625px;
+}
+
+.fa-twitter {
+  padding: 9px;
+}
+
+.fa-instagram {
+  padding: 9px 9.875px;
+}
+
+.copy-rights {
+  color: #969696;
+  font-size: 0.66rem;
+  font-weight: 300;
+}
+
+/***************ATTRIBUTION***************/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    padding: 3% 15%;
+  }
+  #main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .logo {
+    margin-bottom: 1.75em;
+    width: 4.5em;
+  }
+  .main-title {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #969696;
+    margin-bottom: 1rem;
+  }
+  .main-title span {
+    font-weight: 700;
+    color: #151f29;
+  }
+  .main-desc {
+    color: #969696;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  .email,
+  button {
+    border-radius: 2rem;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 0.7em;
+    padding: 0.9rem 2rem;
+  }
+  .email {
+    border: 1px solid #e4e4e4;
+    color: #e4e4e4;
+    margin-bottom: 0.8em;
+    margin-right: 10px;
+    width: calc(100% - 215px);
+  }
+  button {
+    border: 1px solid #4f7df3;
+    background-color: #4f7df3;
+    -webkit-box-shadow: 0 10px 15px 5px rgba(194, 211, 255, 0.6);
+            box-shadow: 0 10px 15px 5px rgba(194, 211, 255, 0.6);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 4em;
+    width: 200px;
+  }
+  button:active {
+    background-color: #698eec;
+    border: 1px solid #698eec;
+  }
+  .hero {
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+}
+
+.popup-error {
+  color: #ff5263;
+  font-size: 0.6em;
+  font-style: italic;
+  margin-bottom: 2.5em;
+}
+
+.borderChange {
+  border: 2px solid #ff5263;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */

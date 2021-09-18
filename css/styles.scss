@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/***************SCREEN SIZES***************/
+$mobile: 376px;
+$tablet: 700px;
+$desktop: 1440px;
+
+/***************COLORS***************/
+// ### Primary
+$blue: hsl(223, 87%, 63%);
+// ### Secondary
+$paleBlue: hsl(223, 100%, 88%);
+$lightRed: hsl(354, 100%, 66%);
+// ### Neutral;
+$gray: hsl(0, 0%, 59%);
+$vdBlue: hsl(209, 33%, 12%);
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+
+  //   RESPONSIVE DESIGN
+  font-size: 20px;
+  padding: 1em;
+  text-align: center;
+}
+
+#main {
+  padding: 2em 0;
+}
+
+.logo {
+  margin-bottom: 1.75em;
+  width: 3.5em;
+}
+
+.main-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: $gray;
+  margin-bottom: 1rem;
+
+  span {
+    font-weight: 700;
+    color: $vdBlue;
+  }
+}
+
+.main-desc {
+  color: $vdBlue;
+  font-size: 0.83rem;
+  margin-bottom: 3em;
+}
+
+.email,
+button {
+  border-radius: 2rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 0.7em;
+  font-weight: 300;
+  padding: 0.9rem 2rem;
+}
+
+.email {
+  border: 1px solid $paleBlue;
+
+  color: $vdBlue;
+  margin-bottom: 0.8em;
+  width: 90%;
+  outline: none;
+
+  &::placeholder {
+    color: $paleBlue;
+  }
+}
+
+button {
+  border: 1px solid $blue;
+  background-color: $blue;
+  box-shadow: 0 10px 15px 5px hsla(223, 100%, 88%, 0.6);
+  color: white;
+  cursor: pointer;
+
+  margin-bottom: 4em;
+  width: 90%;
+
+  &:active {
+    background-color: hsl(223, 78%, 67%);
+    border: 1px solid hsl(223, 78%, 67%);
+  }
+}
+
+.hero {
+  width: 100%;
+  margin-bottom: 5em;
+}
+
+.social-medias {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.fab {
+  color: $blue;
+  display: flex;
+  border-radius: 2em;
+  border: 1px solid rgb(228, 228, 228);
+  background-color: white;
+  margin: 0 0.4rem;
+  font-size: 14px;
+
+  &:hover {
+    background-color: $blue;
+    border: 1px solid $blue;
+    color: white;
+    cursor: pointer;
+  }
+  &:active {
+    background-color: hsl(223, 78%, 67%);
+    border: 1px solid hsl(223, 78%, 67%);
+  }
+}
+.fa-facebook-f {
+  padding: 9px 11.625px;
+}
+.fa-twitter {
+  padding: 9px;
+}
+.fa-instagram {
+  padding: 9px 9.875px;
+}
+
+.copy-rights {
+  color: $gray;
+  font-size: 0.66rem;
+  font-weight: 300;
+}
+/***************ATTRIBUTION***************/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media screen and (min-width: $tablet) {
+  body {
+    padding: 3% 15%;
+  }
+
+  #main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    margin-bottom: 1.75em;
+    width: 4.5em;
+  }
+
+  .main-title {
+    font-size: 3rem;
+    font-weight: 300;
+    color: $gray;
+    margin-bottom: 1rem;
+
+    span {
+      font-weight: 700;
+      color: $vdBlue;
+    }
+  }
+
+  .main-desc {
+    color: $gray;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  .email,
+  button {
+    border-radius: 2rem;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 0.7em;
+    padding: 0.9rem 2rem;
+  }
+
+  .email {
+    border: 1px solid rgb(228, 228, 228);
+
+    color: rgb(228, 228, 228);
+    margin-bottom: 0.8em;
+    margin-right: 10px;
+    width: calc(100% - 215px);
+  }
+
+  button {
+    border: 1px solid $blue;
+    background-color: $blue;
+    box-shadow: 0 10px 15px 5px hsla(223, 100%, 88%, 0.6);
+    color: white;
+    cursor: pointer;
+
+    margin-bottom: 4em;
+    width: 200px;
+
+    &:active {
+      background-color: hsl(223, 78%, 67%);
+      border: 1px solid hsl(223, 78%, 67%);
+    }
+  }
+
+  .hero {
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+}
+
+.popup-error {
+  color: $lightRed;
+  font-size: 0.6em;
+  font-style: italic;
+  margin-bottom: 2.5em;
+}
+
+.borderChange {
+  border: 2px solid $lightRed;
+}
+
+.hidden {
+  display: none;
+}
