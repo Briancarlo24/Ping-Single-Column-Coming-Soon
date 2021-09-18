@@ -14,7 +14,7 @@ html {
 
 /***************SCREEN SIZES***************/
 $mobile: 376px;
-$tablet: 700px;
+$tablet: 600px;
 $desktop: 1440px;
 
 /***************COLORS***************/
@@ -32,7 +32,7 @@ body {
 
   //   RESPONSIVE DESIGN
   font-size: 20px;
-  padding: 1em;
+  padding: 0.75em;
   text-align: center;
 }
 
@@ -172,7 +172,7 @@ button {
   }
 
   #main {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     position: relative;
   }
@@ -185,19 +185,13 @@ button {
   .main-title {
     font-size: 3rem;
     font-weight: 300;
-    color: $gray;
     margin-bottom: 1rem;
-
-    span {
-      font-weight: 700;
-      color: $vdBlue;
-    }
   }
 
   .main-desc {
-    color: $gray;
-    font-size: 1.5rem;
-    font-weight: 500;
+    color: $vdBlue;
+    font-size: 1.3rem;
+    font-weight: 300;
     margin-bottom: 2rem;
   }
   .email,
@@ -205,7 +199,7 @@ button {
     border-radius: 2rem;
     font-family: "Libre Franklin", sans-serif;
     font-size: 0.7em;
-    padding: 0.9rem 2rem;
+    padding: 1rem 2rem;
   }
 
   .email {

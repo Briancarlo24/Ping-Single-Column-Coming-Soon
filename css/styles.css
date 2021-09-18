@@ -18,7 +18,7 @@ html {
 body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 20px;
-  padding: 1em;
+  padding: 0.75em;
   text-align: center;
 }
 
@@ -178,12 +178,12 @@ button:active {
   text-decoration: none;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   body {
     padding: 3% 15%;
   }
   #main {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     position: relative;
   }
@@ -194,17 +194,12 @@ button:active {
   .main-title {
     font-size: 3rem;
     font-weight: 300;
-    color: #969696;
     margin-bottom: 1rem;
   }
-  .main-title span {
-    font-weight: 700;
-    color: #151f29;
-  }
   .main-desc {
-    color: #969696;
-    font-size: 1.5rem;
-    font-weight: 500;
+    color: #151f29;
+    font-size: 1.3rem;
+    font-weight: 300;
     margin-bottom: 2rem;
   }
   .email,
@@ -212,7 +207,7 @@ button:active {
     border-radius: 2rem;
     font-family: "Libre Franklin", sans-serif;
     font-size: 0.7em;
-    padding: 0.9rem 2rem;
+    padding: 1rem 2rem;
   }
   .email {
     border: 1px solid #e4e4e4;
